@@ -9,7 +9,7 @@ public class CountDigits {
 			number /= 10;
 			count++;
 		}
-		System.out.println("Digits count: "+count);
+		System.out.println("Digits count: " + count);
 	}
 
 }
