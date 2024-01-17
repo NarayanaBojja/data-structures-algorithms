@@ -37,7 +37,7 @@ public class BinarySearchAlgo {
 	}
 
 	private static int binarySearchRecursive(int array[], int left, int right, int x) {
-		if (right >= left) {
+		if (left <= right) {
 			int mid = (left + right) / 2;
 			if (array[mid] == x) {
 				return mid;
