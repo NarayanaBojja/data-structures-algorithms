@@ -65,10 +65,46 @@ public class DoublyLinkedList {
 	}
 
 	public void printDoublyLinkedList() {
-		while (head != null) {
-			System.out.print(head.data + " ");
-			head = head.next;
+		DoublyLinkedListNode current = head;
+		while (current != null) {
+			System.out.print(current.data + " ");
+			current = current.next;
 		}
+		System.out.println();
+	}
+
+	public void reverse() {
+		DoublyLinkedListNode temp = null;
+		DoublyLinkedListNode current = head;
+		while (current != null) {
+			temp = current.prev;
+			current.prev = current.next;
+			current.next = temp;
+			current = current.prev;
+		}
+		if (temp != null) {
+			head = temp.prev;
+		}
+	}
+
+	public void deleteHead() {
+		if (head == null) {
+			return;
+		}
+		head = head.next;
+	}
+
+	public void deleteEnd() {
+		if (head == null) {
+			return;
+		}
+		DoublyLinkedListNode last = head;
+		while (last.next != null) {
+			last = last.next;
+		}
+		DoublyLinkedListNode prev = last.prev;
+		last.prev = null;
+		prev.next = null;
 	}
 
 	public static void main(String[] args) {
@@ -80,6 +116,9 @@ public class DoublyLinkedList {
 		dll.addAfter(node5, 10);
 		dll.addBefore(node5, 6);
 		dll.addEnd(9);
+		dll.printDoublyLinkedList();
+		//dll.reverse();
+		dll.deleteEnd();
 		dll.printDoublyLinkedList();
 	}
 
