@@ -2,7 +2,11 @@ package array;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * https://leetcode.com/problems/two-sum/description/
+ *  Time Complexity:O(n) Space Complexity: O(n)
+ * 
+ */
 public class TwoSum {
 
 	public static void main(String[] args) {

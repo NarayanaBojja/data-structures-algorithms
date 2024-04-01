@@ -1,5 +1,6 @@
 package array;
 
+//Kadane's Algorithm
 public class MaxSubArray {
 
 	public static void main(String[] args) {
