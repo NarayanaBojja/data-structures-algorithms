@@ -1,13 +1,13 @@
 package queue;
 
-public class QueueDS {
+public class QueueUsingArrayDS {
 	private int front;
 	private int rear;
 	private int size;
 	private int capacity;
 	private int[] array;
 
-	QueueDS(int capacity) {
+	QueueUsingArrayDS(int capacity) {
 		this.capacity = capacity;
 		front = 0;
 		size = 0;
