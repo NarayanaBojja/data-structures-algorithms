@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class SubArrayGivenSum {
 
 	public static void main(String[] args) {
-		int[] nums = { 1, 2, 3, 4};
-		ArrayList<Integer> list = subarraySum(nums, 10, 0);
+		int[] nums = { 1, 2, 3, 7, 5 };
+		ArrayList<Integer> list = subarraySum(nums, 12);
 		System.out.println(list);
 	}
 
-	static ArrayList<Integer> subarraySum(int[] arr, int n, int s) {
+	static ArrayList<Integer> subarraySum(int[] arr, int s) {
 		ArrayList<Integer> list = new ArrayList<>();
 		int currentSum = 0;
 		int start = 0;
@@ -22,10 +22,16 @@ public class SubArrayGivenSum {
 			}
 			if (currentSum == s) {
 				for (int j = start; j <= i; j++) {
-					list.add(arr[j]);
+					list.add(j);
 				}
-				return list;
 			}
+		}
+		if (!list.isEmpty()) {
+			ArrayList<Integer> finalList = new ArrayList<>();
+			finalList.add(list.get(0) + 1);
+			finalList.add(list.get(list.size() - 1) + 1);
+			return finalList;
+
 		}
 		return list;
 	}
