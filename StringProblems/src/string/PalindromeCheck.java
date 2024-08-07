@@ -1,13 +1,14 @@
 package string;
 
 /**
- * Time complexity: O(n) Auxiliary Space: O(1)
+ * A palindrome string is a string that is symmetrical when read forwards and
+ * backwards Time complexity: O(n) Auxiliary Space: O(1)
  * https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/
  */
 public class PalindromeCheck {
 
 	public static void main(String[] args) {
-		
+
 		System.out.println(palinDromeCheck("aba"));
 	}
 

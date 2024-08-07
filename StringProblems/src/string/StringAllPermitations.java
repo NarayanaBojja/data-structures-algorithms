@@ -1,7 +1,7 @@
 package string;
 
 /**
- * Time Complexity: O(N2) Auxiliary Space: O(N)
+ * Time Complexity: O(n⋅n!) Auxiliary Space: O(n⋅n!)
  * https://www.geeksforgeeks.org/print-all-permutations-of-a-string-in-java/
  */
 public class StringAllPermitations {

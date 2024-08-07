@@ -1,5 +1,13 @@
 package quicksort;
 
+/**
+ * QuickSort is a sorting algorithm based on the Divide and Conquer algorithm
+ * that picks an element as a pivot and partitions the given array around the
+ * picked pivot by placing the pivot in its correct position in the sorted
+ * array.
+ * Time Complexity: O(n2), O(nlogn) Space Complexity: O(logn) 
+ * 
+ */
 public class QuickSortAlgo {
 
 	public static void main(String[] args) {

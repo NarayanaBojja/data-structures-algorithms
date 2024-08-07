@@ -4,12 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * time complexity: O(n) space complexity: O(n)
+ * An anagram string is a new string that is formed by rearranging the
+ * characters of another string time complexity: O(n) space complexity: O(n)
  */
 public class AnagramChecker {
 
 	public static boolean areAnagrams(String str1, String str2) {
-		
+
 		// Remove spaces and convert to lowercase to make comparison case-insensitive
 		str1 = str1.replaceAll("\\s", "").toLowerCase();
 		str2 = str2.replaceAll("\\s", "").toLowerCase();

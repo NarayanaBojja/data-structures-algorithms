@@ -1,7 +1,9 @@
 package slidingwindow;
 
 /**
- * time complexity of the algorithm is O(N), and the space complexity is O(1)
+ * Given an integer array nums, find the subarray with the largest sum, and
+ * return its sum with given size. Time complexity of the algorithm is O(N), and the space
+ * complexity is O(1)
  */
 public class MaxSumSubArray {
 
@@ -21,7 +23,7 @@ public class MaxSumSubArray {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 4, 2, 1, 7, 8, 1, 2, 8, 1, 0 };
+		int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
 		int k = 3;
 		int maxSum = findMaxSumSubarray(arr, k);
 		System.out.println("Maximum sum of subarray of size " + k + ": " + maxSum);
