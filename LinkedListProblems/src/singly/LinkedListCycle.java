@@ -1,5 +1,7 @@
 package singly;
-
+/**
+ * Time Complexity : O(n) Space Complexity: O(1)
+ */
 public class LinkedListCycle {
 
 	public static boolean hasCycle(SingleLinkedList head) {

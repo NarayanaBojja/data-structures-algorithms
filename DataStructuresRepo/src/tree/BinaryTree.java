@@ -42,7 +42,11 @@ public class BinaryTree {
 		System.out.print(root.key + " ");
 		inOrder(root.right);
 	}
-
+	/**
+	 * time complexity : O(n)
+	 * 
+	 * @param root
+	 */
 	public void levelOrder(BinaryTreeNode root) {
 		Queue<BinaryTreeNode> queue = new LinkedList<>();
 		queue.add(root);

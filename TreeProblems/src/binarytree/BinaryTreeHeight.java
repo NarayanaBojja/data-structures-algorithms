@@ -45,6 +45,7 @@ public class BinaryTreeHeight {
 	}
 
 	public static void main(String[] args) {
+		
 		BinaryTreeHeight bt = new BinaryTreeHeight();
 		bt.root = new BinaryTreeNode(4);
 		bt.root.left = new BinaryTreeNode(7);
@@ -54,7 +55,7 @@ public class BinaryTreeHeight {
 		bt.root.left.left.right = new BinaryTreeNode(6);
 
 		System.out.println(maxDepth(bt.root));
-		System.out.println(minDepth(bt.root));
+	    System.out.println(minDepth(bt.root));
 	}
 
 }

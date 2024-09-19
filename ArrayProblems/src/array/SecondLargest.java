@@ -1,5 +1,8 @@
 package array;
 
+/**
+ * Time complexity of O(n) Space complexity O(1)
+ */
 public class SecondLargest {
 
 	public static void main(String[] args) {

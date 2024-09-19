@@ -1,5 +1,9 @@
 package singly;
 
+/**
+ * Remove the Nth node from the end of a singly linked list. Time Complexity :
+ * O(n) Space Complexity: O(1)
+ */
 public class RemoveNthFromEnd {
 
 	public static SingleLinkedList removeNthFromEnd(SingleLinkedList head, int n) {

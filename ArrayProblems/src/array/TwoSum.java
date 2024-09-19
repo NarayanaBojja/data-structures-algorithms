@@ -3,6 +3,7 @@ package array;
 import java.util.HashMap;
 import java.util.Map;
 /**
+ * Find two numbers that add up to a specific target.
  * https://leetcode.com/problems/two-sum/description/
  *  Time Complexity:O(n) Space Complexity: O(n)
  * 

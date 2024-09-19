@@ -1,7 +1,11 @@
 package binarytree;
 
+/**
+ * Given a root of a tree, and an integer k. Print all the nodes which are at k
+ * distance from root.
+ */
 public class PrintKDistance {
-	
+
 	BinaryTreeNode root;
 
 	/**
@@ -9,7 +13,7 @@ public class PrintKDistance {
 	 * Space Complexity : O(height of the binary tree).
 	 */
 	public void printKDistnace(BinaryTreeNode binaryTreeNode, int k) {
-		
+
 		if (binaryTreeNode == null || k < 0) {
 			return;
 		}

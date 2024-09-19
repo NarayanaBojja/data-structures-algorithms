@@ -1,7 +1,9 @@
 package singly;
 
 public class PalindromeLinkedList {
-	
+	/**
+	 * Time Complexity : O(n) Space Complexity: O(1)
+	 */
 	public static boolean isPalindrome(SingleLinkedList head) {
 		SingleLinkedList slow = head;
 		SingleLinkedList fast = head;
