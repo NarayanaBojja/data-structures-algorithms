@@ -1,6 +1,7 @@
 package singly;
 
 public class MiddleOfLinkedList {
+	
 	public static SingleLinkedList middleofSinglyLinkedList(SingleLinkedList head) {
 		if (head == null || head.next == null) {
 			return head;

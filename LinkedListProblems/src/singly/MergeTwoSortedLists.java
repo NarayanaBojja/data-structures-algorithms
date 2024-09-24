@@ -35,9 +35,13 @@ public class MergeTwoSortedLists {
 		SingleLinkedList head1 = new SingleLinkedList(1);
 		head1.next = new SingleLinkedList(2);
 		head1.next.next = new SingleLinkedList(4);
+		head1.next.next.next = new SingleLinkedList(5);
+		head1.next.next.next.next = new SingleLinkedList(6);
 		SingleLinkedList head2 = new SingleLinkedList(1);
 		head2.next = new SingleLinkedList(3);
 		head2.next.next = new SingleLinkedList(4);
+		head2.next.next.next = new SingleLinkedList(7);
+		head2.next.next.next.next = new SingleLinkedList(8);
 		SingleLinkedList mergedList = mergeTwoSortedLists(head1, head2);
 		SinglyLinkedListOps.printlist(mergedList);
 	}

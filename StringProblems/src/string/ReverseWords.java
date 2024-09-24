@@ -12,20 +12,14 @@ public class ReverseWords {
 	 */
 	public static String reverseWords(String s) {
 		s = s.trim();
-		String tempStr = "";
-		for (String str : s.split(" ")) {
-			if (str.trim().equals("")) {
-				continue;
+		String[] words = s.split("\\s+");
+		StringBuilder sb = new StringBuilder();
+		for (int i = words.length - 1; i >= 0; i--) {
+			sb.append(words[i]);
+			if (i != 0) {
+				sb.append(" ");
 			}
-			tempStr = tempStr + str + " ";
 		}
-		tempStr = tempStr.trim();
-		String[] strArray = tempStr.split(" ");
-		for (int i = 0; i < strArray.length / 2; i++) {
-			String temp = strArray[i].trim();
-			strArray[i] = strArray[strArray.length - 1 - i].trim();
-			strArray[strArray.length - 1 - i] = temp;
-		}
-		return String.join(" ", strArray);
+		return sb. toString();
 	}
 }

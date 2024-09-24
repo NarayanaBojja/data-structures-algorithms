@@ -6,8 +6,10 @@ package array;
 public class SecondLargest {
 
 	public static void main(String[] args) {
-		int arr[] = { 10, 5, 10 };
+		int arr[] = { 10, 5, 2, 3, 13 };
 		System.out.println(print2largest(arr));
+		System.out.println("Minimum value: " + minValue(arr));
+		System.out.println("Max value: " + maxValue(arr));
 	}
 
 	static int print2largest(int arr[]) {
@@ -28,5 +30,20 @@ public class SecondLargest {
 			return -1;
 		}
 		return secondLargest;
+	}
+
+	static int minValue(int arr[]) {
+		int min = Integer.MAX_VALUE;
+		for (int i : arr) {
+			min = Math.min(i, min);
+		}
+		return min;
+	}
+	static int maxValue(int arr[]) {
+		int max = Integer.MIN_VALUE;
+		for (int i : arr) {
+			max = Math.max(i, max);
+		}
+		return max;
 	}
 }
