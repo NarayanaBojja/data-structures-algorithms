@@ -1,5 +1,8 @@
 package binarysearch;
 
+/**
+ * Time complexity: O(log n) Space complexity: O(1)
+ */
 public class BinarySearchAlgo {
 
 	public static void main(String[] args) {
