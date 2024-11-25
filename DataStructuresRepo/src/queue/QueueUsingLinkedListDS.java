@@ -10,7 +10,7 @@ class QNode {
 }
 
 public class QueueUsingLinkedListDS {
-
+ 
 	QNode front;
 	QNode rear;
 
@@ -35,7 +35,10 @@ public class QueueUsingLinkedListDS {
 			rear = null;
 		}
 	}
-
+	public int peek() {
+		return front == null ? -1 : front.data;
+		
+	}
 	public static void main(String[] args) {
 		QueueUsingLinkedListDS queue = new QueueUsingLinkedListDS();
 		queue.enqueue(10);
@@ -45,6 +48,7 @@ public class QueueUsingLinkedListDS {
 		queue.dequeue();
 		System.out.println("Front: " + queue.front.data);
 		System.out.println("Rear: " + queue.rear.data);
+		System.out.println("peek: " + queue.peek());
 	}
 
 }

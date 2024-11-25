@@ -21,6 +21,7 @@ public class SubsequencesWithSumK {
 
 		// Include the current element in the subsequence
 		current.add(arr[index]);
+		
 		findSubsequences(index + 1, arr, current, sum + arr[index], K);
 
 		// Backtrack and remove the current element from the subsequence

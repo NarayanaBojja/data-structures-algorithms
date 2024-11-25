@@ -1,6 +1,7 @@
 package recursion;
 
 /**
+ * Given a string, find all the possible subsequences of the string.
  * https://takeuforward.org/data-structure/power-set-print-all-the-possible-subsequences-of-the-string/
  * Time Complexity: O(2^n) Space Complexity: O(n) (in the worst case) or O(1)
  * (if considering the character set size as constant)
