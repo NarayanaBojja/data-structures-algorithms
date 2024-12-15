@@ -15,29 +15,26 @@ public class NextPermutation {
 		System.out.println(Arrays.toString(nums));
 	}
 
-	public static void nextPermutation(int[] nums) {
-		if (nums == null || nums.length == 0 || nums.length == 1) {
+	public static void nextPermutation(int[] arr) {
+		int index = -1;
+		int n = arr.length;
+		for (int i = n - 2; i >= 0; i--) {
+			if (arr[i] < arr[i + 1]) {
+				index = i;
+				break;
+			}
+		}
+		if (index == -1) {
+			reverse(arr, 0, arr.length - 1);
 			return;
 		}
-		// Find the first decreasing element from the right.
-		int i = nums.length - 2;
-		while (i >= 0 && nums[i] >= nums[i + 1]) {
-			i--;
+		for (int i = n - 1; i > index; i--) {
+			if (arr[i] > arr[index]) {
+				swap(arr, i, index);
+				break;
+			}
 		}
-		// If no decreasing element is found, reverse the array.
-		if (i < 0) {
-			reverse(nums, 0, nums.length - 1);
-			return;
-		}
-		// Find the smallest element greater than nums[i] from the right.
-		int j = nums.length - 1;
-		while (j >= 0 && nums[j] <= nums[i]) {
-			j--;
-		}
-		// Swap nums[i] and nums[j].
-		swap(nums, i, j);
-		// Reverse the subarray from i + 1 to the end.
-		reverse(nums, i + 1, nums.length - 1);
+		reverse(arr, index + 1, arr.length - 1);
 	}
 
 	private static void reverse(int[] nums, int start, int end) {

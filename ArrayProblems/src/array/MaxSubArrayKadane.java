@@ -1,7 +1,7 @@
 package array;
 
 //Kadane's Algorithm
-public class MaxSubArray {
+public class MaxSubArrayKadane {
 
 	public static void main(String[] args) {
 		int[] array = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };

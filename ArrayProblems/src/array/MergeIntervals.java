@@ -5,8 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/merge-intervals/description/ 
- * Time Complexity:O(n log n) Space Complexity: O(n)
+ * Given an array of intervals where intervals[i] = [starti, endi], merge all
+ * overlapping intervals, and return an array of the non-overlapping intervals
+ * that cover all the intervals in the input.
+ * https://leetcode.com/problems/merge-intervals/description/ Time
+ * Complexity:O(n log n) Space Complexity: O(n)
  */
 public class MergeIntervals {
 
@@ -14,10 +17,11 @@ public class MergeIntervals {
 		int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
 		intervals = merge(intervals);
 		for (int i = 0; i < intervals.length; i++) {
+			System.out.print("[");
 			for (int j = 0; j < intervals[i].length; j++) {
 				System.out.print(intervals[i][j] + " ");
 			}
-			System.out.println();
+			System.out.print("] ");
 		}
 	}
 
