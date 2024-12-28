@@ -1,7 +1,9 @@
 package binarysearch;
 
 /**
- * Time complexity: O(log n) Space complexity: O(1)
+ * https://www.geeksforgeeks.org/binary-search/
+ *  Time complexity: O(log n) Space
+ * complexity: O(1)
  */
 public class BinarySearchAlgo {
 
