@@ -52,7 +52,7 @@ public class MostFrequentElement {
 			} else if (count == maxCount) {
 				maxCount = count;
 				element = Math.min(element, key);
-			}
+			}			
 		}
 		return element;
 	}

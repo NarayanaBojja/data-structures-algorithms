@@ -9,7 +9,7 @@ public class KthLargestElement {
 
 	public static void main(String[] args) {
 		int[] nums = { 3, 2, 1, 5, 6, 4 };
-		System.out.println("Second largest element: " + findKthLargest(nums, 2));
+		System.out.println("Second largest element: " + findKthLargest(nums, 4));
 
 	}
 
@@ -21,6 +21,7 @@ public class KthLargestElement {
 				pq.poll();
 			}
 		}
+		pq.forEach(System.out::println);
 		return pq.peek();
 	}
 }
